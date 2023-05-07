@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataContext.cs" />
+    <Compile Remove="DataRepository.cs" />
+    <Compile Remove="DataTableDesign.cs" />
+    <Compile Remove="DataUow.cs" />
+    <Compile Remove="IDataUoW.cs" />
+    <Compile Remove="IRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.28" />
+  </ItemGroup>
+
+</Project>
